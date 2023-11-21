@@ -11,12 +11,17 @@ public class ExampleLocators extends Methods {
         PageFactory.initElements(DriverManager.get(), this);
     }
 
-    @FindBy(xpath = "//textarea[@aria-label='username']")
-    public WebElement usernameBox;
-    @FindBy(xpath = "//textarea[@aria-label='password']")
+    @FindBy(xpath = "//a[text()='Giriş']")
+    public WebElement login_1;
+    @FindBy(xpath = "//input[@name='userNameOrEmailAddress']")
+    public WebElement emailBox;
+    @FindBy(xpath = "//input[@placeholder='Şifre']")
     public WebElement passwordBox;
-    @FindBy(xpath = "(//input[@name='btnK'])[2]")
-    public WebElement loginBtn;
-    @FindBy(xpath = "(//input[@name='btnK'])[1]")
-    public WebElement logoutBtn;
+    @FindBy(xpath = "//button[text()='Giriş']")
+    public WebElement login_2;
+    @FindBy(xpath = "//a[@class='toogle-link']")
+    public WebElement accountName;
+    @FindBy(xpath = "//a[text()='Profilim']")
+    public WebElement account;
+
 }
