@@ -28,6 +28,11 @@ public class Methods {
         JavascriptExecutor js = (JavascriptExecutor) DriverManager.get();
         js.executeScript("arguments[0].scrollIntoView();", element);
     }
+    public void scrollToEnd() {
+        JavascriptExecutor js = (JavascriptExecutor) DriverManager.get();
+        js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+    }
+
     public void hoverOver(WebElement element) {
         Actions Actions=new Actions(DriverManager.get());
         Action Action= Actions.moveToElement(element).build();
@@ -39,4 +44,8 @@ public class Methods {
         DriverManager.getWait().until(ExpectedConditions.textToBePresentInElement(element, value));
         Assert.assertTrue(element.getText().toLowerCase().contains(value.toLowerCase()));
 }
+    public void verifyEqualsText(WebElement element, String value) {
+        DriverManager.getWait().until(ExpectedConditions.textToBePresentInElement(element, value));
+        Assert.assertTrue(element.getText().toLowerCase().equals(value.toLowerCase()));
+    }
 }

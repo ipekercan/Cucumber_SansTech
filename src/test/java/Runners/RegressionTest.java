@@ -17,3 +17,4 @@ public class RegressionTest extends AbstractTestNGCucumberTests {
         ExtentService.getInstance().setSystemInfo("Test Type", "Regression Test in All Features");
     }
 }
+

@@ -20,7 +20,6 @@ public class ParallelTest extends AbstractTestNGCucumberTests {
     {
         DriverManager.threadBrowserName.set(browserName);
     }
-
     @AfterClass
     public  static void writeExtentReport(){
         ExtentService.getInstance().setSystemInfo("Test Type", "Parallel Test in All Features");

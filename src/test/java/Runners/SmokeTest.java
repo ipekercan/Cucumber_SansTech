@@ -17,3 +17,4 @@ public class SmokeTest extends AbstractTestNGCucumberTests {
         ExtentService.getInstance().setSystemInfo("Test Type", "Smoke Test in All Features");
     }
 }
+

@@ -27,7 +27,6 @@ public class DriverManager {
         if (threadBrowserName.get() == null) {
             threadBrowserName.set("chrome");
         }
-
         if (threadDriver.get() == null) {
             switch (threadBrowserName.get()){
                 case "firefox": threadDriver.set(new FirefoxDriver()); break;

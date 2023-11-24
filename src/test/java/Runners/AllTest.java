@@ -15,4 +15,5 @@ public class AllTest extends AbstractTestNGCucumberTests {
     public  static void writeExtentReport(){
         ExtentService.getInstance().setSystemInfo("Test Type", "All Features");
     }
+
 }

@@ -18,7 +18,6 @@ public class ExcelUtility {
         } catch (IOException e) {
             System.out.println("e = " + e.getMessage());;
         }
-
         for (int i = 0; i < sheet.getPhysicalNumberOfRows(); i++) {
             ArrayList<String> cell = new ArrayList<>();
             for (int j = 0; j < cellCount; j++) {
